@@ -1,0 +1,29 @@
+/* Burger Menu Style */
+.topnav {
+    overflow: hidden;
+    background-color: rgb(80, 126, 226);
+    position: relative;
+}
+
+/* Links im Burger Menu verstecken */
+.topnav #myLinks {
+    display: none;
+}
+
+/* Burger Menu Links Style */
+.topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+}
+
+/* Burger Menu Icon Style */
+.topnav a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
