@@ -3,18 +3,44 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>CodePen - Pure CSS3 Login Form</title>
+    <title>KiwiBreaker - Login</title>
     <link rel="stylesheet" href="css/login.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/png" href="/images/KiwiBreaker.png">
 </head>
 
 <body>
+       <!--Oberes Navigationsmenü-->
+   <div class="topnav">
+    <a href="index.html" >KiwiBreaker</a>
+    <!--Navigationslinks (standardmäßig versteckt)-->
+    <div id="myLinks">
+        <a href="login.html" class="active2">Login</a>
+        <a href="#contact">Kontakt</a>
+        <a href="#about">Über</a>
+    </div>
+    <!--Burger Menu / Icon um Links zu nutzen-->
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+        
+    </a>
+   </div>
+   <script>
+    function myFunction() {
+      var x = document.getElementById("myLinks");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+    </script>
     <!-- partial:index.partial.html -->
     <div class="wrapper fadeInDown">
         <div id="formContent">
             <!-- Tabs Titles -->
-            <h2 class="active"> Sign In </h2>
-            <h2 class="inactive underlineHover">Sign Up </h2>
+            <h2 class="active"> Anmelden </h2>
+            <h2 class="inactive underlineHover">Registrieren </h2>
 
             <!-- Icon -->
             <div class="fadeIn first">
@@ -22,14 +48,14 @@
 
             <!-- Login Form -->
             <form>
-                <input type="text" id="login" class="fadeIn second" name="login" placeholder="login">
-                <input type="text" id="password" class="fadeIn third" name="login" placeholder="password">
-                <input type="submit" class="fadeIn fourth" value="Log In">
+                <input type="text" id="login" class="fadeIn second" name="login" placeholder="Benutzername">
+                <input type="text" id="password" class="fadeIn third" name="login" placeholder="Passwort">
+                <input type="submit" class="fadeIn fourth" value="Anmelden">
             </form>
 
             <!-- Remind Passowrd -->
             <div id="formFooter">
-                <a class="underlineHover" href="#">Forgot Password?</a>
+                <a class="underlineHover" href="#">Passwort vergessen?</a>
             </div>
 
         </div>
